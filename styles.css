@@ -1,0 +1,98 @@
+body
+{
+    height: 100vh;
+    background-image: url(images/A3.jpg);
+}
+.B
+{
+    width: 655px;
+    height: 400px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+
+}
+h1
+{
+    padding-top: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+}
+form
+{
+    width: 555px;
+    height: 325px;
+}
+form input
+{  
+     display: flex;
+     margin: auto;
+     width: 70%;
+     align-items: center;
+     justify-content: center;
+}
+form label
+{
+    display: flex;
+     margin: auto;
+     float: left;
+     padding-left: 35px;
+     align-items: center;
+     justify-content: center;
+}
+.buton
+{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    border-radius: 11px;
+}
+/* ...existing code... */
+
+@media (max-width: 700px) {
+    .B {
+        width: 95%;
+        min-width: 0;
+        height: auto;
+        padding: 10px;
+    }
+    form {
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        padding: 10px 0;
+    }
+    form input, form label {
+        width: 90%;
+        padding-left: 0;
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .B {
+        width: 100%;
+        padding: 5px;
+    }
+    form input, form label {
+        width: 100%;
+        font-size: 0.95em;
+    }
+    .buton {
+        font-size: 0.95em;
+        padding: 8px 0;
+    }
+    h1 {
+        font-size: 16px;
+    }
+}
+
+/* ...existing code... */
